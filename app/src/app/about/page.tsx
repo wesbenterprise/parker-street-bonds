@@ -58,6 +58,14 @@ export default function AboutPage() {
           </p>
         </section>
 
+        <div className="flex gap-4">
+              <Link href="https://trumpaccounts.gov/">
+                <Button variant="primary">
+                  Official Website for Trump Accounts
+                </Button>
+              </Link>
+            </div>
+
         {/* Key Features */}
         <div className="grid grid-cols-2 gap-6">
           <Card>
