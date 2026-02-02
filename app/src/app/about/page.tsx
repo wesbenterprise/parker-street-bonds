@@ -287,6 +287,10 @@ export default function AboutPage() {
             <div className="space-y-3">
               {[
                 {
+                  label: "Trump Accounts Offical Website",
+                  url: "https://trumpaccounts.gov/",
+                },
+                {
                   label: "IRS: Trump Accounts",
                   url: "https://www.irs.gov/trumpaccounts",
                 },
