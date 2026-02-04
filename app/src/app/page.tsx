@@ -93,6 +93,7 @@ export default function HomePage() {
                   Check My Application
                 </Button>
               </Link>
+              <Link href="Parker_Street_Qualified_Geographic_Area_One_Pager.pdf"
                 <Button
                   variant="outline"
                   size="lg"
@@ -100,6 +101,7 @@ export default function HomePage() {
                 >
                   DRAFT VERSION ONLY -- NOT LIVE
                 </Button>
+              </Link>
             </div>
           </div>
         </div>
