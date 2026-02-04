@@ -12,6 +12,7 @@ import {
   FileText,
   LineChart,
   KeyRound,
+  HelpCircle,
   LogOut,
 } from "lucide-react";
 
@@ -24,6 +25,7 @@ const navItems = [
   { href: "/admin/documents", label: "Documents", icon: FileText },
   { href: "/admin/projections", label: "Projections", icon: LineChart },
   { href: "/admin/pins", label: "PIN Management", icon: KeyRound },
+  { href: "/admin/faqs", label: "FAQ Management", icon: HelpCircle },
 ];
 
 export default function AdminLayout({
