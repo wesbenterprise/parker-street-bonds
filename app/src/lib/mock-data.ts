@@ -1,4 +1,4 @@
-import { Child, Contribution, Family, Fund, FundAllocation, RegulatoryItem, Document, Projection } from "@/types";
+import { Child, Contribution, Family, Fund, FundAllocation, RegulatoryItem, Document, Projection, FAQ } from "@/types";
 
 export const mockFamilies: Family[] = [
   {
@@ -194,7 +194,9 @@ export const mockProjections: Projection[] = [
     cohort_year: 2026,
     cohort_size: 100,
     contribution_per_child: 2500,
+    default_funding_age: 10,
     notes: "Launch cohort. Contributions begin July 4, 2026.",
+    deleted: false,
     created_at: "2026-01-01T00:00:00Z",
   },
   {
@@ -203,7 +205,9 @@ export const mockProjections: Projection[] = [
     cohort_year: 2027,
     cohort_size: 20,
     contribution_per_child: 2500,
+    default_funding_age: 10,
     notes: "Add 20 new children. Continue existing 100.",
+    deleted: false,
     created_at: "2026-01-01T00:00:00Z",
   },
   {
@@ -212,7 +216,92 @@ export const mockProjections: Projection[] = [
     cohort_year: 2028,
     cohort_size: 20,
     contribution_per_child: 2500,
+    default_funding_age: 10,
     notes: "Add 20 new children. Continue existing 120.",
+    deleted: false,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+];
+
+export const mockFAQs: FAQ[] = [
+  {
+    id: "faq1",
+    question: "What is a Trump Account?",
+    answer: "A Trump Account (officially a §530A Account) is a new tax-advantaged savings account for American children under 18, created by the One Big Beautiful Bill Act. It works like an IRA for kids — contributions grow tax-deferred in low-cost U.S. index funds.",
+    order: 1,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq2",
+    question: "How does the Parker Street program work?",
+    answer: "Parker Street Ministries, through the Bell Barnett Fund at GiveWell Community Foundation, contributes $2,500 per year to Trump Accounts for hand-selected children in the Parker Street service area. This is in addition to any government seed money ($1,000 for children born 2025–2028) or other contributions the child may receive.",
+    order: 2,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq3",
+    question: "Who is eligible for the Parker Street program?",
+    answer: "Children in the Parker Street Ministries service area in Lakeland, FL are eligible. Families are hand-selected and will receive a PIN to begin the enrollment process. Any child under 18 with a Social Security number can have a Trump Account opened for them.",
+    order: 3,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq4",
+    question: "How do I open a Trump Account for my child?",
+    answer: "File Form 4547 ('Trump Account Election') with the IRS — you can include it with your tax return or use the online tool at trumpaccounts.gov. This registers your child for a Trump Account and assigns a trustee (usually a bank). If you've been selected for the Parker Street program, you'll receive a PIN and guidance to help with this process.",
+    order: 4,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq5",
+    question: "When can contributions begin?",
+    answer: "The first day contributions can be made to Trump Accounts is July 4, 2026 — the 250th anniversary of the Declaration of Independence. We recommend filing Form 4547 early so your account is ready by that date.",
+    order: 5,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq6",
+    question: "When can my child access the funds?",
+    answer: "The 'growth period' ends on January 1 of the year the child turns 18. After that, the Trump Account converts to a standard traditional IRA, and the account holder has full access to make withdrawals, change investments, or continue growing the account.",
+    order: 6,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq7",
+    question: "What is the $5,000 annual limit?",
+    answer: "Parents, family, friends, employers, and nonprofits can contribute up to $5,000 per child per year. Parker Street Ministries contributes $2,500 of that limit, leaving room for the family or others to contribute an additional $2,500. The $1,000 government pilot seed and qualified general contributions do NOT count against this limit.",
+    order: 7,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq8",
+    question: "What is my PIN and how do I use it?",
+    answer: "If you've been selected for the Parker Street program, you'll receive a unique PIN (one letter followed by six numbers). Use this PIN on our website to log in, check your application status, view contribution history, and upload any requested documents.",
+    order: 8,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq9",
+    question: "Does my child need earned income to have a Trump Account?",
+    answer: "No. Unlike traditional IRAs, Trump Accounts do not require the child to have earned income, and there are no income limits for contributors. Any child under 18 with a Social Security number is eligible.",
+    order: 9,
+    published: true,
+    created_at: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "faq10",
+    question: "What happens if my child qualifies for the Dell Foundation $250 bonus?",
+    answer: "Michael and Susan Dell announced $250 deposits for up to 25 million children born 2014–2024 who live in ZIP codes where the median family income is $150,000 or less. Many children in the Parker Street community may qualify. This bonus is separate from the Parker Street program contributions and the government seed.",
+    order: 10,
+    published: true,
     created_at: "2026-01-01T00:00:00Z",
   },
 ];

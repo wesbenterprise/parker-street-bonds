@@ -106,6 +106,17 @@ export interface Projection {
   cohort_year: number;
   cohort_size: number;
   contribution_per_child: number;
+  default_funding_age: number;
   notes: string | null;
+  deleted: boolean;
+  created_at: string;
+}
+
+export interface FAQ {
+  id: string;
+  question: string;
+  answer: string;
+  order: number;
+  published: boolean;
   created_at: string;
 }
