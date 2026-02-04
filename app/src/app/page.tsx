@@ -93,6 +93,13 @@ export default function HomePage() {
                   Check My Application
                 </Button>
               </Link>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-primary-400 text-white hover:bg-primary-700 transition-all duration-300"
+                >
+                  DRAFT VERSION ONLY -- NOT LIVE
+                </Button>
             </div>
           </div>
         </div>
